@@ -3,20 +3,22 @@
   "version": "1.0.0",
   "description": "Demo project for humanID Log-in",
   "main": "src/index.js",
+
   "scripts": {
-    "serve": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-image": "docker build -t humanid/demo -f build/Dockerfile ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saggafarsyad/demo.git"
+    "url": "git+https://github.com/human-internet/demo.git"
   },
   "author": "Saggaf Arsyad <saggaf.arsyad@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saggafarsyad/demo/issues"
+    "url": "https://github.com/human-internet/demo/issues"
   },
-  "homepage": "https://github.com/saggafarsyad/demo#readme",
+  "homepage": "https://github.com/human-internet/demo#readme",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1",
