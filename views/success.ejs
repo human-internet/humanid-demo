@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>humanID Demo - <%= appName %> - Success</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@250&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    </style>
+    <style>
+        ::selection {
+            background-color: #E13300;
+            color: white;
+        }
+
+        ::-moz-selection {
+            background-color: #E13300;
+            color: white;
+        }
+
+        body {
+            background-color: #fff;
+            font: 14px/20px normal Helvetica, Arial, sans-serif;
+            color: #343434;
+            text-align: center;
+        }
+
+        a {
+            background: #023B60;
+            display: inline-block;
+            padding: 10px 20px 5px;
+            border-radius: 10px;
+        }
+
+        .rectangle {
+            background: #FFFFFF;
+            border-radius: 15px;
+            margin: auto;
+            position: relative;
+            padding: 30px;
+            width: 45%;
+            z-index: 1;
+        }
+
+        #rectangle * {
+            margin-bottom: 8%;
+        }
+    </style>
+</head>
+<body>
+<div class="rectangle">
+    <img src="<%= logoUrl %>" alt="App Logo" height="120">
+    <h3><%= appName %></h3>
+    <div class="data">
+        <p>Country: <b><%= userCountry %></b></p>
+        <p>User ID: <b><%= userId %></b></p>
+    </div>
+</div>
+</body>
+</html>
