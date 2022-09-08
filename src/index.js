@@ -47,6 +47,14 @@ app.get("/success", (req, res) => {
         });
 });
 
+app.get("/failed", (req, res) => {
+    res.render("failed", {
+        appName: config.DEMO_APP_NAME,
+        logoUrl: config.DEMO_APP_LOGO_URL,
+        errMessage: `[${req.query.code}] ${req.query.message}`,
+    });
+});
+
 // Start serve
 app.listen(config.PORT, () => {
     console.log(`  > Serving on http://localhost:${config.PORT}`);
