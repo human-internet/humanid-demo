@@ -5,4 +5,5 @@ module.exports = {
     HUMANID_CLIENT_SECRET: process.env.HUMANID_CLIENT_SECRET,
     DEMO_APP_NAME: process.env.DEMO_APP_NAME,
     DEMO_APP_LOGO_URL: process.env.DEMO_APP_LOGO_URL,
+    SKIP_SUCCESS_PAGE: process.env.SKIP_SUCCESS_PAGE === "true" || false,
 };

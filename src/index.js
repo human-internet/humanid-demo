@@ -30,6 +30,11 @@ app.get("/success", (req, res) => {
     humanID
         .verifyExchangeToken(req.query.et)
         .then((resp) => {
+            if (config.SKIP_SUCCESS_PAGE) {
+                res.redirect("https://human-id.org/demo-success");
+                return;
+            }
+
             res.render("success", {
                 appName: config.DEMO_APP_NAME,
                 logoUrl: config.DEMO_APP_LOGO_URL,
