@@ -40,6 +40,7 @@ app.get("/success", (req, res) => {
                 logoUrl: config.DEMO_APP_LOGO_URL,
                 userCountry: resp.data.countryCode,
                 userId: resp.data.appUserId,
+                requestId: resp.data.requestId,
             });
         })
         .catch((err) => {
