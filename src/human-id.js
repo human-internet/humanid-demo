@@ -7,7 +7,7 @@ const humanID = {
         if (isProduction) {
             return "https://api.human-id.org/v1";
         }
-        return "https://s-api.human-id.org/v1";
+        return "https://core.human-id.org/v0.03";
     },
     getWebLoginUrl: async () => {
         const url = `${humanID.getBaseUrl(config.HUMANID_PRODUCTION)}/server/users/web-login`;

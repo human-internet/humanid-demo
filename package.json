@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Demo project for humanID Log-in",
   "main": "src/index.js",
-
   "scripts": {
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/human-internet/demo#readme",
   "dependencies": {
+    "dotenv": "^16.4.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "got": "^11.8.3"
